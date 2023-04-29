@@ -1,0 +1,11 @@
+// Create your own map
+$custom-colors: (
+	"white": #fff,
+	"dark-blue": $dark-blue,
+	"dark-blue-2": $dark-blue-2,
+	"blue": $blue,
+	"light-blue": $light-blue,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

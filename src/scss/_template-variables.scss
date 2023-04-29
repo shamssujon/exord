@@ -1,0 +1,162 @@
+$prefix: bs-;
+$enable-negative-margins: true;
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer * 0.75,
+	4: $spacer * 1,
+	5: $spacer * 1.25,
+	6: $spacer * 1.5,
+	7: $spacer * 1.75,
+	8: $spacer * 2,
+	9: $spacer * 2.25,
+	10: $spacer * 2.5,
+	11: $spacer * 2.75,
+	12: $spacer * 3,
+	13: $spacer * 3.25,
+	14: $spacer * 3.5,
+	15: $spacer * 3.75,
+	16: $spacer * 4,
+	17: $spacer * 4.25,
+	18: $spacer * 4.5,
+	19: $spacer * 4.75,
+	20: $spacer * 5,
+	21: $spacer * 5.25,
+	22: $spacer * 5.5,
+	23: $spacer * 5.75,
+	24: $spacer * 6,
+	25: $spacer * 6.25,
+	26: $spacer * 6.5,
+	27: $spacer * 6.75,
+	28: $spacer * 7,
+	29: $spacer * 7.25,
+	30: $spacer * 7.5,
+	31: $spacer * 7.75,
+	32: $spacer * 8,
+);
+
+// Container
+$container-padding-x: 3rem;
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1344px,
+);
+
+// Grid columns
+$grid-gutter-width: 2rem;
+
+// Colors
+$primary: #e6f85e;
+$dark: #11121c;
+$light: #bdbfd4;
+$dark-blue: #171825;
+$dark-blue-2: #191a28;
+$blue: #2e2f45;
+$light-blue: #747694;
+$body-color-dark: $light;
+$body-bg-dark: $dark;
+
+$border-color: $blue;
+$border-color-dark: $blue;
+
+// Font
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji",
+	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.125;
+$h1-font-size: clamp(2.25rem, 1.7143rem + 1.7143vw, 3rem);
+$h2-font-size: clamp(2rem, 1.6429rem + 1.1429vw, 2.5rem);
+$h3-font-size: clamp(1.75rem, 1.5714rem + 0.5714vw, 2rem);
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
+
+// headings-variables
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+
+// Input
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: none;
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.25rem;
+
+// Input + button
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1.5rem;
+$input-btn-padding-y-sm: 0.5rem;
+$input-btn-padding-x-sm: 1.25rem;
+// $input-btn-font-size-sm:      $font-size-sm;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
+
+// Button
+$btn-font-weight: 500;
+
+// Transition
+$transition-fast: all 0.15s ease-in-out;
+
+// Navbar
+$navbar-padding-y: $spacer * 1;
+$navbar-light-color: $light;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-light-disabled-color: rgba($light, 0.25);
+$navbar-dark-color: $light;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+$navbar-dark-disabled-color: rgba($light, 0.25);
+
+// Dropdown
+$dropdown-min-width: 14rem;
+$dropdown-padding-x: 0.5rem;
+$dropdown-padding-y: 0.75rem;
+$dropdown-link-color: var(--#{$prefix}body-color);
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: transparent;
+
+$dropdown-link-active-color: $primary;
+$dropdown-link-active-bg: transparent;
+
+// Badge
+$badge-font-size: 1rem;
+$badge-font-weight: 500;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.1rem;
+
+// Accordion
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-color: var(--#{$prefix}body-color);
+$accordion-bg: var(--#{$prefix}body-bg);
+$accordion-border-width: var(--#{$prefix}border-width);
+$accordion-border-color: var(--#{$prefix}border-color);
+$accordion-border-radius: var(--#{$prefix}border-radius);
+$accordion-button-color: var(--#{$prefix}body-color);
+$accordion-button-bg: var(--#{$prefix}accordion-bg);
+$accordion-button-active-bg: var(--#{$prefix}accordion-bg);
+$accordion-button-active-color: #fff;
+
+// Aspect ratios
+$aspect-ratios: (
+	"1x1": 100%,
+	"4x3": calc(3 / 4 * 100%),
+	"6x4": calc(4 / 6 * 100%),
+	"16x9": calc(9 / 16 * 100%),
+	"21x9": calc(9 / 21 * 100%),
+);
+
+// Pagination
+$pagination-active-color: $dark;
