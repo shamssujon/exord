@@ -47,7 +47,7 @@ const paths = {
 		`./${srcPathName}/js/plugins/swiper-bundle.min.js`,
 		`./${srcPathName}/js/plugins/aos.min.js`,
 		`./${srcPathName}/js/plugins/venobox.min.js`,
-		`./${srcPathName}/js/plugins/typed.umd.js`,
+		`./${srcPathName}/js/plugins/particles.min.js`,
 	],
 	img: {
 		src: `./${srcPathName}/images/**/*.{jpg,jpeg,png,svg}`,
@@ -64,6 +64,11 @@ const paths = {
 		dest: `./${buildPathName}/assets/php`,
 		destProd: `./${distPathName}/assets/php`,
 	},
+	json: {
+		src: `./${srcPathName}/json/**/*.json`,
+		dest: `./${buildPathName}/assets/json`,
+		destProd: `./${distPathName}/assets/json`,
+	},
 	clean: {
 		dist: `./${distPathName}/*`,
 		all: `./${buildPathName}/*`,
@@ -73,6 +78,7 @@ const paths = {
 		img: `./${buildPathName}/assets/images/*`,
 		php: `./${buildPathName}/assets/php/*`,
 		fonts: `./${buildPathName}/assets/fonts/*`,
+		json: `./${buildPathName}/assets/json/*`,
 	},
 };
 
@@ -200,6 +206,16 @@ function phpTaskProd() {
 	return src(paths.php.src).pipe(dest(paths.php.destProd));
 }
 
+// json Task
+function jsonTask() {
+	return src(paths.json.src).pipe(dest(paths.json.dest));
+}
+
+// json Task Production
+function jsonTaskProd() {
+	return src(paths.json.src).pipe(dest(paths.json.destProd));
+}
+
 // Clean directory
 function cleanDist() {
 	return del(paths.clean.dist);
@@ -225,6 +241,9 @@ function cleanPhp() {
 function cleanFonts() {
 	return del(paths.clean.fonts);
 }
+function cleanJson() {
+	return del(paths.clean.json);
+}
 
 // Watch Task
 function watchTask() {
@@ -237,12 +256,13 @@ function watchTask() {
 	watch(paths.img.src, series(cleanImg, imgTask, browsersyncReload));
 	watch(paths.php.src, series(cleanPhp, phpTask, browsersyncReload));
 	watch(paths.fonts.src, series(cleanFonts, fontsTask, browsersyncReload));
+	watch(paths.json.src, series(cleanJson, jsonTask, browsersyncReload));
 }
 
 // Gulp default/build task
 exports.default = series(
 	cleanAll,
-	parallel(htmlTask, cssTask, scssTask, jsTask, jsPluginsTask, imgTask, phpTask, fontsTask),
+	parallel(htmlTask, cssTask, scssTask, jsTask, jsPluginsTask, imgTask, phpTask, fontsTask, jsonTask),
 	browsersyncServe,
 	watchTask
 );
@@ -255,6 +275,7 @@ exports.prod = series(
 	jsTaskProd,
 	jsPluginsTaskProd,
 	phpTaskProd,
+	jsonTaskProd,
 	imgTaskProd,
 	fontsTaskProd,
 	scssTaskProd,

@@ -14,5 +14,7 @@ Version: 1.0
 */
 
 (function () {
-	
+
+    // Particles bg
+	particlesJS.load("particles-bg", "./assets/json/particles-config.json");
 })();
