@@ -1,0 +1,150 @@
+@font-face {
+	font-family: "flaticon_cc";
+	src: url("../fonts/flaticon/flaticon_cc.ttf?a516c87f77dae0d37c97f08ec1167b7b") format("truetype"),
+		url("../fonts/flaticon/flaticon_cc.woff?a516c87f77dae0d37c97f08ec1167b7b") format("woff"),
+		url("../fonts/flaticon/flaticon_cc.woff2?a516c87f77dae0d37c97f08ec1167b7b") format("woff2"),
+		url("../fonts/flaticon/flaticon_cc.eot?a516c87f77dae0d37c97f08ec1167b7b#iefix") format("embedded-opentype"),
+		url("../fonts/flaticon/flaticon_cc.svg?a516c87f77dae0d37c97f08ec1167b7b#flaticon_cc") format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+	font-family: flaticon_cc !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-browser:before {
+	content: "\f101";
+}
+.flaticon-globe:before {
+	content: "\f102";
+}
+.flaticon-global-network:before {
+	content: "\f103";
+}
+.flaticon-world-grid:before {
+	content: "\f104";
+}
+.flaticon-wifi-router:before {
+	content: "\f105";
+}
+.flaticon-web-page:before {
+	content: "\f106";
+}
+.flaticon-freelance:before {
+	content: "\f107";
+}
+.flaticon-internet:before {
+	content: "\f108";
+}
+.flaticon-radio-tower:before {
+	content: "\f109";
+}
+.flaticon-internet-1:before {
+	content: "\f10a";
+}
+.flaticon-internet-2:before {
+	content: "\f10b";
+}
+.flaticon-speedometer:before {
+	content: "\f10c";
+}
+.flaticon-web-domain:before {
+	content: "\f10d";
+}
+.flaticon-signal:before {
+	content: "\f10e";
+}
+.flaticon-wifi:before {
+	content: "\f10f";
+}
+.flaticon-internet-security:before {
+	content: "\f110";
+}
+.flaticon-cloud:before {
+	content: "\f111";
+}
+.flaticon-signal-1:before {
+	content: "\f112";
+}
+.flaticon-wireless-internet:before {
+	content: "\f113";
+}
+.flaticon-wireless:before {
+	content: "\f114";
+}
+.flaticon-no-wifi:before {
+	content: "\f115";
+}
+.flaticon-smartphone:before {
+	content: "\f116";
+}
+.flaticon-wifi-1:before {
+	content: "\f117";
+}
+.flaticon-internet-3:before {
+	content: "\f118";
+}
+.flaticon-wifi-2:before {
+	content: "\f119";
+}
+.flaticon-internet-4:before {
+	content: "\f11a";
+}
+.flaticon-internet-5:before {
+	content: "\f11b";
+}
+.flaticon-smart-home:before {
+	content: "\f11c";
+}
+.flaticon-wifi-router-1:before {
+	content: "\f11d";
+}
+.flaticon-wifi-router-2:before {
+	content: "\f11e";
+}
+.flaticon-free-wifi:before {
+	content: "\f11f";
+}
+.flaticon-wireless-router:before {
+	content: "\f120";
+}
+.flaticon-wifi-3:before {
+	content: "\f121";
+}
+.flaticon-satellite-dish:before {
+	content: "\f122";
+}
+.flaticon-tv-monitor:before {
+	content: "\f123";
+}
+.flaticon-cable-tv:before {
+	content: "\f124";
+}
+.flaticon-satellite-1:before {
+	content: "\f125";
+}
+.flaticon-satellite:before {
+	content: "\f126";
+}
+.flaticon-satellite-2:before {
+	content: "\f127";
+}
+.flaticon-satellite-tv:before {
+	content: "\f128";
+}
+.flaticon-transmitter:before {
+	content: "\f129";
+}
+.flaticon-satellite-3:before {
+	content: "\f12a";
+}
+.flaticon-broadcast:before {
+	content: "\f12b";
+}

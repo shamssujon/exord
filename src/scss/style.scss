@@ -8,14 +8,14 @@ Version: 1.0
 */
 
 // Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "plugins/bootstrap-5.3.0-alpha3/functions";
 
 // 2. Include any default variable overrides here
-@import "template-variables";
+@import "theme-variables";
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "plugins/bootstrap-5.3.0-alpha3/variables";
@@ -71,7 +71,7 @@ Version: 1.0
 // 8. Add additional custom code here
 @import "global";
 @import "components/navbar";
-// @import "components/hero";
+@import "components/hero";
 // @import "components/features";
 // @import "components/pricing";
 // @import "components/faq";

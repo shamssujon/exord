@@ -1,0 +1,248 @@
+/* 
+============================================
+Colors
+============================================
+*/
+
+// Gray
+$theme-gray-1: #d8d8d8 !default;
+$theme-gray-2: #595a5a !default;
+$theme-gray-3: #434343 !default;
+$theme-gray-4: #221617 !default;
+$theme-gray-5: #181011 !default;
+
+$grays: (
+	"1": $theme-gray-1,
+	"2": $theme-gray-2,
+	"3": $theme-gray-3,
+	"4": $theme-gray-4,
+	"5": $theme-gray-5,
+);
+
+// Red
+$theme-red-1: #ffdcde !default;
+$theme-red-2: #7d6162 !default;
+$theme-red-3: #d6111e !default;
+$theme-red-4: #b9020e !default;
+$theme-red-5: #88012a !default;
+
+// Yellow
+$theme-yellow-1: #fbf8f3 !default;
+$theme-yellow-2: #faf2dd !default;
+$theme-yellow-3: #f7cd49 !default;
+$theme-yellow-4: #ffc100 !default;
+$theme-yellow-5: #fcbd08 !default;
+
+// Green
+$theme-green-1: #dcfff4 !default;
+$theme-green-2: #06825b !default;
+
+// Blue
+$theme-blue-1: #e9f4ff !default;
+$theme-blue-2: #0055aa !default;
+
+// Pink
+$theme-pink-1: #300026 !default;
+
+$colors: (
+	"blue": $theme-blue-2,
+	"pink": $theme-pink-1,
+	"red": $theme-red-3,
+	"yellow": $theme-yellow-4,
+	"green": $theme-green-2,
+	"gray": $theme-gray-2,
+	"gray-dark": $theme-gray-3,
+);
+
+// Theme colors
+$primary: $theme-red-3;
+$secondary: $theme-gray-2;
+$success: $theme-green-2;
+$warning: $theme-yellow-5;
+$danger: $theme-red-3;
+$light: $theme-gray-1;
+$dark: $theme-gray-5;
+
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"warning": $warning,
+	"danger": $danger,
+	"light": $light,
+	"dark": $dark,
+);
+
+$theme-colors: map-merge($theme-colors, $colors);
+
+// Gradients
+$gradient-1: linear-gradient(135deg, rgba($theme-pink-1, 1) 0.07%, rgba($theme-red-5, 1) 100%);
+$gradient-2: linear-gradient(270.17deg, rgba($theme-red-4, 1) 0.07%, rgba($theme-yellow-5, 1) 100%);
+$gradient-3: linear-gradient(276.04deg, rgba($theme-red-3, 1) 0.73%, rgba($theme-yellow-5, 1) 112.78%);
+
+$gradients: (
+	gradient-1: $gradient-1,
+	gradient-2: $gradient-2,
+	gradient-3: $gradient-3,
+);
+
+$body-color: $secondary;
+
+// Options
+$prefix: bs-;
+$enable-negative-margins: true;
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer * 0.75,
+	4: $spacer * 1,
+	5: $spacer * 1.25,
+	6: $spacer * 1.5,
+	7: $spacer * 1.75,
+	8: $spacer * 2,
+	9: $spacer * 2.25,
+	10: $spacer * 2.5,
+	11: $spacer * 2.75,
+	12: $spacer * 3,
+	13: $spacer * 3.25,
+	14: $spacer * 3.5,
+	15: $spacer * 3.75,
+	16: $spacer * 4,
+	17: $spacer * 4.25,
+	18: $spacer * 4.5,
+	19: $spacer * 4.75,
+	20: $spacer * 5,
+	21: $spacer * 5.25,
+	22: $spacer * 5.5,
+	23: $spacer * 5.75,
+	24: $spacer * 6,
+	25: $spacer * 6.25,
+	26: $spacer * 6.5,
+	27: $spacer * 6.75,
+	28: $spacer * 7,
+	29: $spacer * 7.25,
+	30: $spacer * 7.5,
+	31: $spacer * 7.75,
+	32: $spacer * 8,
+);
+
+// Container
+$container-padding-x: 3rem;
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1344px,
+);
+
+// Grid columns
+$grid-gutter-width: 2rem;
+
+// Font
+$font-family-sans-serif: "Roboto", system-ui, -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+	"Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.125;
+$h1-font-size: clamp(2.75rem, 2.3333rem + 1.3333vw, 3.5rem);
+$h2-font-size: clamp(2.25rem, 1.8333rem + 1.3333vw, 3rem);
+$h3-font-size: clamp(1.75rem, 1.4722rem + 0.8889vw, 2.25rem);
+$h4-font-size: clamp(1.375rem, 1.3056rem + 0.2222vw, 1.5rem);
+$h5-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
+$line-height-base: 1.625;
+$line-height-sm: 1.3;
+$line-height-lg: 2;
+
+// headings-variables
+$headings-font-family: "Ubuntu", sans-serif;
+$headings-font-weight: 700;
+$headings-line-height: 1.25;
+$headings-color: $dark;
+
+// Input
+// $input-focus-border-color: $primary;
+// $input-focus-box-shadow: none;
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 2rem;
+$border-radius-2xl: 2rem;
+$border-radius-3xl: 3rem;
+$border-radius-4xl: 4rem;
+$border-radius-5xl: 5rem;
+
+// Input + button
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1.5rem;
+$input-btn-font-size: $font-size-lg;
+// $input-btn-padding-y-sm: 0.5rem;
+// $input-btn-padding-x-sm: 1.25rem;
+// $input-btn-font-size-sm:      $font-size-sm;
+// $input-btn-padding-y-lg: 1rem;
+// $input-btn-padding-x-lg: 2rem;
+
+// Button
+// $btn-font-weight: 500;
+$btn-line-height: $line-height-sm;
+
+// Transition
+$transition-fast: all 0.15s ease-in-out;
+
+// Navbar
+// $navbar-padding-y: $spacer * 1;
+// $navbar-light-color: $light;
+// $navbar-light-hover-color: $primary;
+// $navbar-light-active-color: $primary;
+// $navbar-light-disabled-color: rgba($light, 0.25);
+// $navbar-dark-color: $light;
+// $navbar-dark-hover-color: $primary;
+// $navbar-dark-active-color: $primary;
+// $navbar-dark-disabled-color: rgba($light, 0.25);
+
+// Dropdown
+// $dropdown-min-width: 14rem;
+// $dropdown-padding-x: 0.5rem;
+// $dropdown-padding-y: 0.75rem;
+// $dropdown-link-color: var(--#{$prefix}body-color);
+// $dropdown-link-hover-color: $primary;
+// $dropdown-link-hover-bg: transparent;
+
+// $dropdown-link-active-color: $primary;
+// $dropdown-link-active-bg: transparent;
+
+// Badge
+// $badge-font-size: 1rem;
+// $badge-font-weight: 500;
+// $badge-padding-y: 0.5rem;
+// $badge-padding-x: 0.1rem;
+
+// Accordion
+// $accordion-padding-y: 1rem;
+// $accordion-padding-x: 1.25rem;
+// $accordion-color: var(--#{$prefix}body-color);
+// $accordion-bg: var(--#{$prefix}body-bg);
+// $accordion-border-width: var(--#{$prefix}border-width);
+// $accordion-border-color: var(--#{$prefix}border-color);
+// $accordion-border-radius: var(--#{$prefix}border-radius);
+// $accordion-button-color: var(--#{$prefix}body-color);
+// $accordion-button-bg: var(--#{$prefix}accordion-bg);
+// $accordion-button-active-bg: var(--#{$prefix}accordion-bg);
+// $accordion-button-active-color: #fff;
+
+// Aspect ratios
+$aspect-ratios: (
+	"1x1": 100%,
+	"1x15": calc(1.2 / 1 * 100%),
+	"4x3": calc(3 / 4 * 100%),
+	"6x4": calc(4 / 6 * 100%),
+	"16x9": calc(9 / 16 * 100%),
+	"21x9": calc(9 / 21 * 100%),
+);

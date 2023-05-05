@@ -16,6 +16,81 @@ $utilities: map-merge(
 						),
 				)
 			),
+		"rounded":
+			map-merge(
+				map-get($utilities, "rounded"),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded"), "values"),
+							(
+								6: $border-radius-3xl,
+								7: $border-radius-4xl,
+								8: $border-radius-5xl,
+							)
+						),
+				)
+			),
+		"rounded-top":
+			map-merge(
+				map-get($utilities, "rounded-top"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded-top"), "values"),
+							(
+								6: $border-radius-3xl,
+								7: $border-radius-4xl,
+								8: $border-radius-5xl,
+							)
+						),
+				)
+			),
+		"rounded-bottom":
+			map-merge(
+				map-get($utilities, "rounded-bottom"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded-bottom"), "values"),
+							(
+								6: $border-radius-3xl,
+								7: $border-radius-4xl,
+								8: $border-radius-5xl,
+							)
+						),
+				)
+			),
+		"rounded-end":
+			map-merge(
+				map-get($utilities, "rounded-end"),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded-end"), "values"),
+							(
+								6: $border-radius-3xl,
+							)
+						),
+				)
+			),
+		"rounded-start":
+			map-merge(
+				map-get($utilities, "rounded-start"),
+				(
+					values:
+						map-merge(
+							map-get(map-get($utilities, "rounded-start"), "values"),
+							(
+								6: $border-radius-3xl,
+								7: $border-radius-4xl,
+								8: $border-radius-5xl,
+							)
+						),
+				)
+			),
 		"width": (
 			property: width,
 			class: w,
